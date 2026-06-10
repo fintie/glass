@@ -186,6 +186,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
+.hero-glass-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
 .capability {
     display: flex;
     align-items: center;
