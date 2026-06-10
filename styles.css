@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .glass-mockup {
     position: relative;
-    width: 300px;
+    width: 600px;
     height: 400px;
     display: flex;
     flex-direction: column;
