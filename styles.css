@@ -1024,6 +1024,26 @@ table td.medium {
     color: #0e2e61;
 }
 
+.system-canvas {
+    background: #e6eef5;
+    color: #0f456c;
+}
+
+.system-sanalabs {
+    background: #f0eef8;
+    color: #4b2d7f;
+}
+
+.system-fred {
+    background: #fff6e5;
+    color: #a25e2d;
+}
+
+.system-minfos {
+    background: #eef8f5;
+    color: #1e6e55;
+}
+
 .system-apple {
     background: #f3f3f3;
     color: #111;
