@@ -522,9 +522,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .solution-card-top {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 24px;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
@@ -541,6 +541,24 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-dark);
     line-height: 1.3;
     margin: 0;
+}
+
+.solution-visual {
+    width: 100%;
+    min-height: 280px;
+    background: transparent;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    overflow: hidden;
+}
+
+.solution-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .solution-visual {
@@ -1043,12 +1061,12 @@ table td.medium {
 
 .future-mockup {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
 }
 
 .future-scene {
-    height: 150px;
+    min-height: 170px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -1068,6 +1086,10 @@ table td.medium {
 
 .engineering-scene {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.creator-scene {
+    background: linear-gradient(135deg, #ff9a8b 0%, #fecfef 100%);
 }
 
 .scene-label {
