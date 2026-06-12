@@ -498,9 +498,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .solutions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
     margin-top: 60px;
+}
+
+.solution-card {
+    min-height: 540px;
+}
+
+@media (max-width: 992px) {
+    .solution-card-top {
+        grid-template-columns: 1fr;
+    }
 }
 
 .solution-card {
@@ -510,30 +520,37 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.solution-card h3 {
-    font-size: 20px;
+.solution-card-top {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.solution-copy h3 {
+    font-size: 18px;
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
-.solution-card h4 {
-    font-size: 28px;
+.solution-copy h4 {
+    font-size: 24px;
     color: var(--text-dark);
-    margin-bottom: 25px;
     line-height: 1.3;
+    margin: 0;
 }
 
 .solution-visual {
     width: 100%;
-    min-height: 240px;
+    min-height: 200px;
     background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(0, 212, 255, 0.05) 100%);
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     border: 1px solid rgba(0, 102, 255, 0.1);
     overflow: hidden;
 }
@@ -542,6 +559,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.solution-card h3,
+.solution-card h4 {
+    margin-bottom: 0;
+}
+
+.solution-card .solution-features {
+    margin-bottom: 25px;
 }
 
 .illustration {
