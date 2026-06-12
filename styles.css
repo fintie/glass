@@ -1518,8 +1518,9 @@ table td.medium {
     }
 
     .glass-mockup {
-        width: 200px;
-        height: 280px;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
     }
 
     .glass-frame {
@@ -1530,6 +1531,15 @@ table td.medium {
     .glass-lens {
         width: 70px;
         height: 70px;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-glass-image {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
