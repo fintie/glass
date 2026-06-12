@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .industry-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
@@ -498,13 +498,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .solutions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 40px;
     margin-top: 60px;
 }
 
 .solution-card {
-    min-height: 540px;
+    min-height: auto;
 }
 
 @media (max-width: 992px) {
